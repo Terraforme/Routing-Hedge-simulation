@@ -1,0 +1,22 @@
+mode vertex
+set graph 7
+0 0 1 0 1 0 0 
+0 0 0 1 1 0 0 
+0 0 0 0 1 1 1 
+0 0 0 0 1 0 1 
+0 0 0 0 0 1 0 
+0 0 0 0 0 0 1 
+0 0 0 0 0 0 0
+print graph links
+new network
+set network linear
+new players 1
+set player 0 1 6
+run for 100
+print graphviz
+print potential
+mode paths convert
+run for 100 
+print graphviz
+print potential
+quit

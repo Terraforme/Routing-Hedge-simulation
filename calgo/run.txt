@@ -1,0 +1,9 @@
+mode vertex
+new graph 50
+new players 1
+set mass 10
+new network
+set network poly3
+set beta 0.01
+run corrected with 0.1
+quit

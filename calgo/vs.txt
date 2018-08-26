@@ -1,0 +1,13 @@
+mode vertex
+new graph 15
+new players 15
+set mass 3
+print players
+new network
+set network poly3
+set cst_gamma 0.01
+set beta 0.5
+run potential for 2000
+print mark '#'
+run corrected potential for 2000
+quit

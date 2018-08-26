@@ -1,0 +1,8 @@
+new graph 15
+new network 
+set network linear
+new players 1
+set beta 0.01
+run with 0.001
+print graphviz
+quit

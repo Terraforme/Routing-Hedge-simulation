@@ -1,0 +1,17 @@
+// set graph 4
+// 0 1 1 0
+// 0 0 1 1
+// 0 0 0 1
+// 0 0 0 0
+new graph 10
+print graph links
+new players 1
+// set player 0 0 3
+set mass 0.9
+new network
+set network linear
+run simulation for 10000 with 100
+print graphviz
+run simulation for 10000 with 100
+print graphviz
+quit
